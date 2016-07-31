@@ -24,7 +24,8 @@ public class main {
         }
         catch(Exception ex)
         {
-
+            System.out.println("Failed");
+            System.out.println(ex);
         }
 
     }

@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.net.HttpURLConnection;
 import org.json.JSONObject;
 
 /**
@@ -11,9 +12,14 @@ public class manifestretrieval {
     netidentificationitems netItems = new netidentificationitems();
 
     public void updateManifest() throws Exception {
-        properties.put("User-Agent", netItems.getUserAgent());
-        properties.put("X-API-KEY", netItems.getApiKey());
-        JSONObject manifestResponse = netCaller.httpGet(netItems.getManifestUrl(),properties).toString());
+
+        HttpURLConnection con = netCaller.initiateHttpGet(netItems.getManifestUrl());
+        con.addRequestProperty("X-API-Key",netItems.getApiKey());
+        JSONObject manifestResponse = netCaller.convertResponseToJson(con);
+        String version = manifestResponse.getJSONObject("Response").get("version").toString();
+        System.out.println(version);
+        String worldSqlContentLoc = manifestResponse.getJSONObject("Response").getJSONObject("mobileWorldContentPaths").get("en").toString();
+        System.out.println(worldSqlContentLoc);
     }
 
 

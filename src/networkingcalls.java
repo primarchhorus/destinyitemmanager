@@ -12,15 +12,15 @@ import java.util.*;
  */
 public class networkingcalls {
 
-    public JSONObject httpGet(String urlString, Map<String,String> properties) throws Exception {
+    public HttpURLConnection initiateHttpGet(String urlString) throws Exception {
         //Start url connection
         URL obj = new URL(urlString);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
-        // Loop over the properties map and set the request propetries
-        for (String key : properties.keySet()) {
-            con.setRequestProperty(key,properties.get(key));
-        }
+        return con;
+    }
+
+    public JSONObject convertResponseToJson(HttpURLConnection con) throws Exception {
         //Prepare stream buffers to red in response and convert to json
         InputStream in = new BufferedInputStream(con.getInputStream());
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));
