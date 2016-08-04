@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3640ffcc-f6be-43d6-abbd-a5d0202bf33f" name="Default" comment="Fixed up some exception locks i had gotten myself into by combining the url connection and the read response into 1 function">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/destinyitemmanager/manifestretrieval.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/destinyitemmanager/netidentificationitems.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/destinyitemmanager/networkingcalls.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manifestretrieval.java" afterPath="$PROJECT_DIR$/src/manifestretrieval.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/netidentificationitems.java" afterPath="$PROJECT_DIR$/src/netidentificationitems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/networkingcalls.java" afterPath="$PROJECT_DIR$/src/networkingcalls.java" />
-    </list>
+    <list default="true" id="3640ffcc-f6be-43d6-abbd-a5d0202bf33f" name="Default" comment="Fixed up some exception locks i had gotten myself into by combining the url connection and the read response into 1 function" />
     <ignored path="destinyitemmanager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -123,9 +114,9 @@
         <option value="$PROJECT_DIR$/src/authentication.java" />
         <option value="$PROJECT_DIR$/src/configitems.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/networkingcalls.java" />
         <option value="$PROJECT_DIR$/src/manifestretrieval.java" />
         <option value="$PROJECT_DIR$/src/netidentificationitems.java" />
+        <option value="$PROJECT_DIR$/src/networkingcalls.java" />
       </list>
     </option>
   </component>
